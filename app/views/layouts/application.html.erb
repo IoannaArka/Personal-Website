@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ioanna</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+ 	 <title>Dr. Ioanna Arka</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+ 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
 </head>
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><%= link_to "Home", root_path%> <span class="sr-only">(current)</span></a></li>
+				<!--	<li><%= link_to "Bio", bio_path%> <span class="sr-only">(current)</span></a></li> -->
+	        <li><%= link_to "Jobs for Astronomers", jobsforastronomers_path%></a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Μy blogs <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="<%=blogs_griechischekueche_path%>"> <i class="famfamfam-flag-de"></i> Griechische Küche </a></li>
+	            <li><a href="<%=blogs_lowcarbdeutschland_path%>"> <i class="famfamfam-flag-de"></i> Low Carb Deutschland </a></li>
+	            <li class="divider"></li>
+	            <li><a href="<%=blogs_engamovios_path%>">  <i class="famfamfam-flag-gr"></i>	 Εν Γάμω Βίος</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <a class="navbar-brand navbar-right"> Ioanna Arka </a>
+	    </div><!-- /.navbar-collapse -->
+			
+     
+	  </div><!-- /.container-fluid -->
+	</nav>
 
 <%= yield %>
 
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   		 <ul class="nav navbar-nav">
+   		 	<li><%= link_to "Impressum", impressum_path %></li>
+   		 </ul>
+  	</div>
+	</div>
+</nav>
+
 </body>
+	
 </html>
