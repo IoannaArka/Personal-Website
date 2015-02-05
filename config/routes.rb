@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/work_experience', to: 'main#work_experience'
   get '/education', to: 'main#education'
   get '/articles', to: 'main#articles'
+  get 'hobbies', to: 'main#hobbies'
   get '/other_skills', to: 'main#other_skills'
   get '/talks_seminars', to: 'main#talks_seminars'
   get '/additional_training', to: 'main#additional_training'
