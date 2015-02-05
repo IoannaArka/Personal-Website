@@ -5,14 +5,36 @@
 .container {
 }
 
-div img {
-	padding-top: 0%;
-  border-radius: 5px 5px 5px 5px;
-	width: 100%;
+table.work {
+  width: 100%;
 }
 
-.row.gallery {
-	padding-top: 5%;
+td {
+  line-height: 2em;
+  text-align: right;
+  width: 50%;
+}
+
+div img {
+  vertical-align: top;
+  float: right;
+  border-radius: 5px;
+  margin: 1.5%;
+	width: 30%;
+}
+.fullwidth {
+  float: none;
+  margin: auto;
+  width: 100%;
+}
+
+div.short {
+  max-width: 65%;
+}
+
+h3 {
+  padding: 2%;
+  background: white;
 }
 
 body {
@@ -25,6 +47,7 @@ body {
 }
 
 div p {
+  line-height: 160%;
 	padding-top: 10px;
 	text-align: justify;
 }
@@ -33,7 +56,7 @@ div p {
 	max-width: 700px; 
   border-radius: 5px 5px 5px 5px;
 	margin: 0 auto;  
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.4);
 	padding: 10px 10px 10px 10px;
 }
 

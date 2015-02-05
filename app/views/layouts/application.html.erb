@@ -22,8 +22,17 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><%= link_to "Home", root_path%> <span class="sr-only">(current)</span></a></li>
-				<!--	<li><%= link_to "Bio", bio_path%> <span class="sr-only">(current)</span></a></li> -->
+	        <li><%= link_to "About", root_path%> <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Short Bio <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="<%=blogs_griechischekueche_path%>"> Education </a></li>
+            <li><a href="<%=work_experience_path%>"> Work Experience </a></li>
+            <li class="divider"></li>
+            <li><a href="<%=blogs_engamovios_path%>"> Other Skills </a></li>
+            <li><a href="<%=blogs_engamovios_path%>"> Hobbys/Interests </a></li>
+          </ul>
+        </li>
 	        <li><%= link_to "Jobs for Astronomers", jobsforastronomers_path%></a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Μy blogs <span class="caret"></span></a>
@@ -42,13 +51,16 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
+<%= notice %>
+<%= alert %>
+
 <%= yield %>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
    		 <ul class="nav navbar-nav">
-   		 	<li><%= link_to "Impressum", impressum_path %></li>
+   		 	<li><%= link_to "Impressum / Contact", impressum_path %></li>
    		 </ul>
   	</div>
 	</div>

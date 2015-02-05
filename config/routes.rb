@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  get 'backend', to: 'backend#index'
+
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'main#index'
-  get '/bio', to: 'main#bio'
+  get '/work_experience', to: 'main#work_experience'
   get '/blogs/griechischekueche', to: 'main#griechischekueche'
   get '/blogs/lowcarbdeutschland', to: 'main#lowcarbdeutschland'
   get '/blogs/engamovios', to: 'main#engamovios'
