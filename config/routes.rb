@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'main#index'
   get '/work_experience', to: 'main#work_experience'
+  get '/education', to: 'main#education'
+  get '/articles', to: 'main#articles'
+  get '/other_skills', to: 'main#other_skills'
+  get '/talks_seminars', to: 'main#talks_seminars'
+  get '/additional_training', to: 'main#additional_training'
+  get '/additional_training/teaching', to: 'main#teaching'
   get '/blogs/griechischekueche', to: 'main#griechischekueche'
   get '/blogs/lowcarbdeutschland', to: 'main#lowcarbdeutschland'
   get '/blogs/engamovios', to: 'main#engamovios'
