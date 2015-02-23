@@ -16,7 +16,7 @@
  */
 //= depend_on_asset "famfamfam-flags.png"
 
-.famfamfam-flag {
+[class^="famfamfam-flag"] {
   background-image:url('<%= asset_path("famfamfam-flags.png") %> ');
 }
 
