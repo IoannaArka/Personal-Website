@@ -14,6 +14,11 @@
  *= require_tree .
  *= require_self
  */
+//= depend_on_asset "famfamfam-flags.png"
+
+.famfamfam-flag {
+  background-image:url('<%= asset_path("famfamfam-flags.png") %> ');
+}
 
 @import "bootstrap-sprockets";
 $navbar-default-bg: 	#C8D6E8;
